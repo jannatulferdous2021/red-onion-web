@@ -80,7 +80,7 @@ banner style start
     color: #FFFFFF;
     font-weight: bold;
     border-radius: 18px;
-    right: 446px;
+    right: 440px;
     top: 188px;
 }
 /* =============
@@ -223,7 +223,7 @@ footer style
 
 .footer{
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, 20rem);
     justify-content: space-around;
     align-items: center;
     background-color: #191919;
@@ -323,7 +323,10 @@ media queries
         padding: 6px 15px;
         position: absolute;
         top: 387px;
-        right: 80px;
+        right: 50px;
+    }
+    .food_item_title a{
+        margin: 10px;
     }
     .breakfast_item_row1{
         height: 800px;
@@ -339,9 +342,11 @@ media queries
         justify-content: center;
         align-items: center;
     }
+    .checkout-btn{
+        margin-top: 400px;
+    }
     .checkout-btn a{
         padding: 10px 30px;
-        line-height: 150px;
     }
     .summer_cards_title{
         display: flex;
@@ -349,24 +354,25 @@ media queries
         justify-content: center;
         align-items: center;
         margin-left: 20px;
-        height: 180px;
+        margin: 50px 20px;
    }
    .summery_cards{
-    width: 400px;
+    width: 250px;
     height: 1600px;
     display: grid;
     justify-content: center;
     align-items: center;
     grid-gap: 50px;
    }
+   .footer{
+    display: grid;
+    grid-template-columns:2rem 10rem 12rem;
+   }
+
    .f-logo img{
-    width: 100px;
-   }
-   .footer ul{
-    margin-right: 10px;
-   }
-   .footer ul:last-child{
-    margin-right: 120px;
+    width: 80px;
+    margin-bottom: 150px;
+    padding: 0px 80px;
    }
   }
 
